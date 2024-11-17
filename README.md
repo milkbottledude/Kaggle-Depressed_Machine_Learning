@@ -46,6 +46,16 @@ Again 2 mutually exclusive columns (similar to the columns work pressure and aca
 Fixed the columns 'Dietary Habits' and 'Degree'. For 'Dietary Habits', i just fillna'ed with the mode of the column, 'Moderate'. For the latter column, its impossible to know the degrees of the 2 working professionals who did not have a degree, so i just fillna'ed with 'unknown degree' to play it safe. I doubt it will make a big difference as theres only 2 rows with missing Degree values. Also i made a simple function that checks for NaN values in a column as i was getting tired of typing.
 
 ## Version 8
+Finally, the last NaN plagued column, Financial Stress. I decided to fillna with the mean due to the distribution being pretty even, as shown below.
+
+![image](https://github.com/user-attachments/assets/d9d06e1c-9dfc-4e98-9384-98b9181db7eb)
+
+Also, made a little function that helps u fillna a column using either the mean, median, 0, or another column, as long as you enter the 1)name of the column with NaN values, 2)the type of data you want replacing the NaN values (mean, median, 0, another column). If you choose another column, then you have to fill in the 3rd argument 3) the name of the other column whose values you want to use to replace the NaN values.
+
+And that concludes the fixing of NaN values for now, and we can finally get to doing stuff that are a bit more exciting.
+
+
+## Version 9
 
 
  
