@@ -42,8 +42,10 @@ Again 2 mutually exclusive columns (similar to the columns work pressure and aca
 
 (also i dont wanna use median for the whole project, i like variety)
 
+## Version 7
+Fixed the columns 'Dietary Habits' and 'Degree'. For 'Dietary Habits', i just fillna'ed with the mode of the column, 'Moderate'. For the latter column, its impossible to know the degrees of the 2 working professionals who did not have a degree, so i just fillna'ed with 'unknown degree' to play it safe. I doubt it will make a big difference as theres only 2 rows with missing Degree values. Also i made a simple function that checks for NaN values in a column as i was getting tired of typing.
 
-
+## Version 8
 
 
  
