@@ -54,8 +54,9 @@ Also, made a little function that helps u fillna a column using either the mean,
 
 And that concludes the fixing of NaN values for now, and we can finally get to doing stuff that are a bit more exciting.
 
+## Version 9/10
+Did all the data configuration that was done to the training set to the test dataset, but when doing fillna mean and median for the test data, i still used the training data's mean and median values. This is to keep things realistic by making sure the test data remains 'unseen'. By right, we have not seen the test data yet, so how can we know the means and medians of the test data when we need to know all the test data values in order to calculate the test data means and medians. I gotta go to army camp now, see you in a week. I hate army.
 
-## Version 9
 
-
+## Version 11
  
