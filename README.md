@@ -29,10 +29,19 @@ Filled NaN values in Work Pressure column with the value in the column Academic 
 Fixing the column CGPA this time. 
 
 For this column, the majority of the NaN values are from working professionals with actual professions(not fillna'ed with 'working professional). Furthermore, some of the professions are rather prestigious, such as Software Engineer, Business Analyst, Chemist etc, professions that people who work in ought to have had a decent education. This makes me think that their lack of a CGPA value is simply because it was not keyed in. It would not be right to fillna with 0 as their actual CGPA might actually be pretty high, around 8 or 9. Hence, I decided to fillna with the median CGPA (which was 7.77 upon calculation). Why didnt i use the mean instead? Glad u asked (i hope u did). That is because the distribution of the CGPA is not normal. Far from it, and it also has small fluctuations and clusters. Below is a rough graph of the CGPA distribution provided by Kaggle.
+
 ![image](https://github.com/user-attachments/assets/e47335df-9f89-45ee-b832-b25e24e3a752)
+
 There are a few students with no CGPA values, unfortunately i have no reasoning for what kind of measure i should implement to replace their NaN values. They could be outstanding students, or they could be utter crap, so for convenience and simplicity, ill also fillna with the median GCPA for them. Until i find a better method for this small handful of people, this will do for now.
 
 ## Version 6:
+Fixed the columns 'Job Satisfaction' and 'Study Satisfaction'.
+Again 2 mutually exclusive columns (similar to the columns work pressure and academic pressure), combined these 2 to create a new column 'Career Satisfaction'. With the remaining NaN values, why i used the mean to replace them instead of the median is because of the distributions of the variables Job Satisfaction and Study Satisfaction. They are quite evenly distributed, as shown below
+
+![image](https://github.com/user-attachments/assets/01cceba5-0824-4371-b1b9-7a0043d1b10b)
+
+(also i dont wanna use median for the whole project, i like variety)
+
 
 
 
