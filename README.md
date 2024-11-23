@@ -1,9 +1,14 @@
 # Depressed_Machine_Learning
 This is a super duper simple and detailed explanation of my very simple machine learning model project, which predicts whether one has depression based on a variety of variables and characteristics of a person. For this repository, ill document my whole machine learning process here and break it down more simply. It may seem lengthy, but i assure you its rather easy to understand.
 
+Feel free to skip to any chapters that interest you, the chapters do not necessarily have to be read in order.
+
 ## Contents
-Version 1 - 11: Data Configuration
-Version 12 - 
+Chapter 1: Data Configuration & Cleaning (Versions 1-11)
+
+Chapter 2: (Versions 12-
+
+# Chapter 1: Data Configuration and Cleaning
 
 ## Version 1: 
 Starting off, I did the usual looking for NaN values and removing unnecessary columns that would only confuse the machine learning model such as id and Name. 
@@ -72,7 +77,7 @@ Furthermore, some of the values in the columns 'Sleep Duration' and 'Dietary Hab
 
 {'Gender', 'Vegas', 'No', 'Unhealthy', 'Indoor', 'M.Tech', 'Hormonal', 'Mihir', 'No Healthy', 'Pratham', 'More Healthy', 'BSc', '3', '1.0', 'Less than Healthy', 'Healthy', 'Less Healthy', '2', 'Moderate', 'Electrician', 'Class 12', 'Male', 'Yes'}
 
-Values like 'Healthy', 'Moderate', and 'Unhealthy' are understandable. Other values, such as 'Hormonal', 'Mihir', and 'Yes' is sure to raise many questions about what exactly does this person's diet consists of such that it can be summed up with the word 'Hormonal'. The best i could manage was replacing all the values that had no business being there with the mode value in the column, 'Moderate'.
+Values like 'Healthy', 'Moderate', and 'Unhealthy' are understandable. Other values, such as 'Hormonal', 'Mihir', and 'Yes' is sure to raise many questions about what exactly does this person's diet consists of such that it can be summed up with the word 'Hormonal'. The best i could manage was quantifying the word values (so Unhealthy: 1, Moderate: 2, Healthy: 3), and replacing all the values that had no business being there with the mode value, 'Moderate', so 2.
 
 As for the list of values under the column 'Sleep Duration', here it is:
 
@@ -80,7 +85,10 @@ As for the list of values under the column 'Sleep Duration', here it is:
 
 Thinking of someone sleeping for 'Pune' hours made me laugh.
 
-Firstly, i sorted out those values which were obviously sleep duration per week, such as '45-48 hours' and '35-36 hours', by 7 days. For values that stated a range of values, such as '9-11 hours', i took the median, so in this case '10'. For ranges like '8-9 hours', i just took the lower number, so in this case '8'. i tidied up values that were partially messed up, such as 'than 5 hours', which i assume was supposed to be 'less than 5 hours', then took the median, so '3' in this case. (Replacing qualitative values with numbers is also good as the ML model understands the magnitude of numbers better than words) For values completely beyond reason such as 'Pune' and 'No', i replaced them with the mean sleep duration value.
+Firstly, i sorted out those values which were obviously sleep duration per week, such as '45-48 hours' and '35-36 hours', by 7 days. For values that stated a range of values, such as '9-11 hours', i took the median, so in this case '10'. For ranges like '8-9 hours', i just took the lower number, so in this case '8'. i tidied up values that were partially messed up, such as 'than 5 hours', which i assume was supposed to be '5 hours'. (Replacing qualitative values with numbers is also good as the ML model understands the magnitude of numbers better than words) For values completely beyond reason such as 'Pune' and 'No', i replaced them with the mean sleep duration value, as the column does not have any crazy outliers of much greater or smaller value than the other values of higher frequency. Thats just my reasoning anyway, i may be wrong and median may be the better choice here.
+
+![image](https://github.com/user-attachments/assets/66512368-03ad-4fdc-9d46-f5faf2451b3b)
+
 
 ## Version 14
 
