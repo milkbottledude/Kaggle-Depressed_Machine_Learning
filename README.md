@@ -4,9 +4,9 @@ This is a super duper simple and detailed explanation of my very simple machine 
 Feel free to skip to any chapters that interest you, the chapters do not necessarily have to be read in order.
 
 ## Contents
-Chapter 1: Data Configuration & Cleaning (Versions 1-11)
+Chapter 1: Data Configuration & Cleaning (Versions 1-14)
 
-Chapter 2: (Versions 12-
+Chapter 2: (Versions 15-
 
 # Chapter 1: Data Configuration and Cleaning
 
@@ -91,4 +91,11 @@ Firstly, i sorted out those values which were obviously sleep duration per week,
 
 
 ## Version 14
+Realised that some of the values in the 'Profession' column were also messed up. I edited values that were odd but still barely decipherable (eg: Finanancial Analyst). For values that were utter gibberish (eg: Nagpur, 24th), i replaced them with 'Unknown Profession'. It felt wrong to put 'No Profession' as there was already value 'Unemployed', and they might have ann actual profession, just that it was not inputted properly.
 
+Heres the list of values that were in the 'Profession' column.
+
+{'Marketing Manager', 'Visakhapatnam', 'B.Ed', 'MCA', 'Doctor', 'Researcher', 'Digital Marketer', 'Working Professional', 'Data Scientist', 'Entrepreneur', 'FamilyVirar', 'Financial Analyst', 'Research Analyst', '24th', 'M.Ed', 'MD', 'Manager', 'Profession', 'Civil Engineer', 'M.Tech', 'Mechanical Engineer', 'MBBS', 'BBA', 'Dev', 'Surgeon', 'B.Com', 'Chef', 'Investment Banker', '3M', 'PhD', 'Teacher', 'Travel Consultant', 'Medical Doctor', 'Educational Consultant', 'Finanancial Analyst', 'City Consultant', 'Sales Executive', 'Graphic Designer', 'UX/UI Designer', 'Pranav', 'Manvi', 'BE', 'Pharmacist', 'Software Engineer', 'Plumber', 'City Manager', 'Simran', 'Business Analyst', 'No', 'Unveil', 'Patna', 'Customer Support', 'B.Pharm', 'Name', 'Electrician', 'LLM', 'Yogesh', 'MBA', 'Chemist', 'Pilot', 'Moderate', 'Architect', 'Judge', 'BCA', 'Samar', 'Unhealthy', 'Lawyer', 'ME', 'Analyst', 'Yuvraj', 'Consultant', 'Family Consultant', 'Accountant', 'Content Writer', 'Surat', 'Student', 'Unemployed', 'HR Manager', 'Nagpur', 'Academic'}
+
+
+## Version 15
