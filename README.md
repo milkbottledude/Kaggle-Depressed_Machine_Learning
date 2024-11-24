@@ -4,11 +4,11 @@ This is a super duper simple and detailed explanation of my very simple machine 
 Feel free to skip to any chapters that interest you, the chapters do not necessarily have to be read in order.
 
 ## Contents
-Chapter 1: Data Configuration & Cleaning (Versions 1-14)
+Chapter 1: Data Cleaning (Versions 1-14)
 
 Chapter 2: (Versions 15-
 
-# Chapter 1: Data Configuration and Cleaning
+# Chapter 1: Data Cleaning
 
 ## Version 1: 
 Starting off, I did the usual looking for NaN values and removing unnecessary columns that would only confuse the machine learning model such as id and Name. 
@@ -97,5 +97,13 @@ Heres the list of values that were in the 'Profession' column.
 
 {'Marketing Manager', 'Visakhapatnam', 'B.Ed', 'MCA', 'Doctor', 'Researcher', 'Digital Marketer', 'Working Professional', 'Data Scientist', 'Entrepreneur', 'FamilyVirar', 'Financial Analyst', 'Research Analyst', '24th', 'M.Ed', 'MD', 'Manager', 'Profession', 'Civil Engineer', 'M.Tech', 'Mechanical Engineer', 'MBBS', 'BBA', 'Dev', 'Surgeon', 'B.Com', 'Chef', 'Investment Banker', '3M', 'PhD', 'Teacher', 'Travel Consultant', 'Medical Doctor', 'Educational Consultant', 'Finanancial Analyst', 'City Consultant', 'Sales Executive', 'Graphic Designer', 'UX/UI Designer', 'Pranav', 'Manvi', 'BE', 'Pharmacist', 'Software Engineer', 'Plumber', 'City Manager', 'Simran', 'Business Analyst', 'No', 'Unveil', 'Patna', 'Customer Support', 'B.Pharm', 'Name', 'Electrician', 'LLM', 'Yogesh', 'MBA', 'Chemist', 'Pilot', 'Moderate', 'Architect', 'Judge', 'BCA', 'Samar', 'Unhealthy', 'Lawyer', 'ME', 'Analyst', 'Yuvraj', 'Consultant', 'Family Consultant', 'Accountant', 'Content Writer', 'Surat', 'Student', 'Unemployed', 'HR Manager', 'Nagpur', 'Academic'}
 
+# Chapter 2: Machine Learning Model configuration
 
 ## Version 15
+To start, ive kept things simple with a Logistic Regression classification model, but i had to edit one of the hyperparameters, max_iter, and increase it from 100 to 150 as the model could not converge to a small enough error value within 100 updates of the model's parameters. I split the training data into 4 parts mock training data and 1 part mock test data. I then trained the model on the mock training data and tested it on the mock test data, getting an accuracy score of 93.16%, which im quite happy with for a first try. Maybe its because of the all the data cleaning which yielded this result, or maybe the dataset variables are just that good.
+
+## Version 16
+After all that, its time to officially see how our model fares against everyone else in the competition by submitting it and seeing our rank. In this version i just created an extra cell in the jupyter notebook to call the same model.fit that was used in Version 15, except this time i called it on the entire training data not just the mock data. Then i created the submission dataframe and ended off with a little exclamation of celebration. 
+Edit: After submission, the public score of our first model is 0.93981, which places us at position 1285 out of 2009 participants. Not bad for a first try, but its still below average, and i can still think of plenty of ways to improve the model. Thinking cap mode activated babeeey
+
+## Version 17
