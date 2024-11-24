@@ -137,3 +137,6 @@ The longest i ever spend cleaning a column, partly because im not knowledgeable 
 Public accuracy score did go up in the end, but it was still not as good as the first attempt, making this only the 2nd best score. 
 
 ## Version 20
+In this version i experiment with dropping the 'City' column to see if that will get a better public accuracy score, since it strangely performed better with the mock test data, getting the highest score so far of 0.93941, so that by right should translate to a better public accuracy score. Also theres a typo in the commit message for version20, i wrote dropped 'degree' column but i actually drop the 'city' column in this version. Edit: Public accuracy score did not improve beyond our best score. Back to the drawing board.
+
+## Version 21
