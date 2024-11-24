@@ -123,4 +123,7 @@ The worst variables that had basically no correlation with the model are:
 
 3) Profession
 
-This could be due to some degree values that are gibberish which i missed during the data cleaning, i gotta fix those. To do that, i will replace nonsense degree values with 'unknown degree'. Lets see if that improves the accuracy score.
+This could be due to some degree values that are gibberish which i missed during the data cleaning, as well as in the 'City' column. Will replace gibberish values and see how that helps. 
+Edit: Public score went down from 0.93981 to 0.93949. Odd, I though that would improve accuracy. Oh well, we move on.
+
+## Version 18
