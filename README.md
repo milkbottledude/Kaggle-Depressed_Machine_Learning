@@ -107,3 +107,20 @@ After all that, its time to officially see how our model fares against everyone 
 Edit: After submission, the public score of our first model is 0.93981, which places us at position 1285 out of 2009 participants. Not bad for a first try, but its still below average, and i can still think of plenty of ways to improve the model. Thinking cap mode activated babeeey
 
 ## Version 17
+In this version, i decided to see which variables were most and least helpful to the model in determining whether one had depression or not by checking the magnitude of the absolute value of the variable coefficients. The larger the coefficient, the greater the correlation between that column's values and the outcome (whether homie has depression or not). The top 3 variables were
+
+1) Age
+
+2) Pressure
+
+3) Working Professional or Student
+
+The worst variables that had basically no correlation with the model are:
+
+1) Degree
+
+2) City
+
+3) Profession
+
+This could be due to some degree values that are gibberish which i missed during the data cleaning, i gotta fix those. To do that, i will replace nonsense degree values with 'unknown degree'. Lets see if that improves the accuracy score.
