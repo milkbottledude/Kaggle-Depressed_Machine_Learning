@@ -130,3 +130,10 @@ Edit: Public score went down from 0.93981 to 0.93949. Odd, I though that would i
 My data cleaning of the 'Degree' column was not done properly, there are still invalid degrees in there due to my lack of knowledge on degree acronyms which led to misclassification of which degree was valid and which was not. In a later version i will thoroughly research every single value under the 'Degree' column for both datasets and correctly determine which need to be removed, but for now ill experiment by removing the 'Degree' column and seeing whether it improves the accuracy score. Edit: it dropped further to 0.93928. Blast.
 
 ## Version 19
+The longest i ever spend cleaning a column, partly because im not knowledgeable on degree acronyms, partly because that was one hella messed up column. Values were all over the place, n i spent a long time not just getting rid of useless values, but also salvaging partially messed up degree names and trying to decipher what they really mean
+
+![image](https://github.com/user-attachments/assets/7a627e71-5d81-420a-8fe7-7afe9d7de919)
+
+Public accuracy score did go up in the end, but it was still not as good as the first attempt, making this only the 2nd best score. 
+
+## Version 20
