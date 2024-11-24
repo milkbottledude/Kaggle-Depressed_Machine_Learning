@@ -127,3 +127,6 @@ This could be due to some degree values that are gibberish which i missed during
 Edit: Public score went down from 0.93981 to 0.93949. Odd, I though that would improve accuracy. Oh well, we move on.
 
 ## Version 18
+My data cleaning of the 'Degree' column was not done properly, there are still invalid degrees in there due to my lack of knowledge on degree acronyms which led to misclassification of which degree was valid and which was not. In a later version i will thoroughly research every single value under the 'Degree' column for both datasets and correctly determine which need to be removed, but for now ill experiment by removing the 'Degree' column and seeing whether it improves the accuracy score. Edit: it dropped further to 0.93928. Blast.
+
+## Version 19
