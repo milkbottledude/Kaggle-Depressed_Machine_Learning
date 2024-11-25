@@ -140,3 +140,13 @@ Public accuracy score did go up in the end, but it was still not as good as the 
 In this version i experiment with dropping the 'City' column to see if that will get a better public accuracy score, since it strangely performed better with the mock test data, getting the highest score so far of 0.93941, so that by right should translate to a better public accuracy score. Also theres a typo in the commit message for version20, i wrote dropped 'degree' column but i actually drop the 'city' column in this version. Edit: Public accuracy score did not improve beyond our best score. Back to the drawing board.
 
 ## Version 21
+Made a new column 'satisfaction_per_pressure', which is basically 'Career Satisfaction' value/'Pressure' value. I created this feature to hopefully try and capture a dynamic between the 2 values where the satisfaction may be somewhat worth the pressure of the career. Hopefully the model picks up on this and can find more complex patterns which will lead to a more accurate public accuracy score. The accuracy score using the mock test data was 0.94944, the highest so far. Absolute coefficient for this new variable was 0.003313, which granted is not super high like with the variables Age or Financial Stress, but its still not bad and definitely contributes to the model. 
+
+Edit: Accuracy went down to 0.93949, not the worst score but not the best either, will be removing this column in the next version.
+
+## Version 22
+Made a another new column 'satisfaction_per_financialstress', which is 'Career Satisfaction' value/'Financial Stress' value. The accuracy score on the mock test data was 0.93912, but the abs coefficient value for this new column was one of the highest at 0.112564, placing 18th out of 103 columns in terms of how highly correlated the variable is to the outcome (basically how useful and important the variable is to the machine learning model when predicting whether one has depression or not.). I'm feeling optimistic with this new variable.
+
+Edit: Public accuracy score went up to 0.93976, but still short of all time high of 0.93981.
+
+## Version 23
