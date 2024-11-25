@@ -39,13 +39,17 @@ Fixing the column CGPA this time.
 
 For this column, the majority of the NaN values are from working professionals with actual professions(not fillna'ed with 'working professional). Furthermore, some of the professions are rather prestigious, such as Software Engineer, Business Analyst, Chemist etc, professions that people who work in ought to have had a decent education. This makes me think that their lack of a CGPA value is simply because it was not keyed in. It would not be right to fillna with 0 as their actual CGPA might actually be pretty high, around 8 or 9. Hence, I decided to fillna with the median CGPA (which was 7.77 upon calculation). Why didnt i use the mean instead? Glad u asked (i hope u did). That is because the distribution of the CGPA is not normal. Far from it, and it also has small fluctuations and clusters. Below is a rough graph of the CGPA distribution provided by Kaggle.
 
+Fig 1:
+
 ![image](https://github.com/user-attachments/assets/e47335df-9f89-45ee-b832-b25e24e3a752)
 
 There are a few students with no CGPA values, unfortunately i have no reasoning for what kind of measure i should implement to replace their NaN values. They could be outstanding students, or they could be utter crap, so for convenience and simplicity, ill also fillna with the median GCPA for them. Until i find a better method for this small handful of people, this will do for now.
 
 ## Version 6:
 Fixed the columns 'Job Satisfaction' and 'Study Satisfaction'.
-Again 2 mutually exclusive columns (similar to the columns work pressure and academic pressure), combined these 2 to create a new column 'Career Satisfaction'. With the remaining NaN values, why i used the mean to replace them instead of the median is because of the distributions of the variables Job Satisfaction and Study Satisfaction. They are quite evenly distributed, as shown below
+Again 2 mutually exclusive columns (similar to the columns work pressure and academic pressure), combined these 2 to create a new column 'Career Satisfaction'. With the remaining NaN values, why i used the mean to replace them instead of the median is because of the distributions of the variables Job Satisfaction and Study Satisfaction. They are quite evenly distributed, as shown below.
+
+Fig 2:
 
 ![image](https://github.com/user-attachments/assets/01cceba5-0824-4371-b1b9-7a0043d1b10b)
 
@@ -56,6 +60,8 @@ Fixed the columns 'Dietary Habits' and 'Degree'. For 'Dietary Habits', i just fi
 
 ## Version 8
 Finally, the last NaN plagued column, Financial Stress. I decided to fillna with the mean due to the distribution being pretty even, as shown below.
+
+Fig 3:
 
 ![image](https://github.com/user-attachments/assets/d9d06e1c-9dfc-4e98-9384-98b9181db7eb)
 
@@ -86,6 +92,8 @@ As for the list of values under the column 'Sleep Duration', here it is:
 Thinking of someone sleeping for 'Pune' hours made me laugh.
 
 Firstly, i sorted out those values which were obviously sleep duration per week, such as '45-48 hours' and '35-36 hours', by 7 days. For values that stated a range of values, such as '9-11 hours', i took the median, so in this case '10'. For ranges like '8-9 hours', i just took the lower number, so in this case '8'. i tidied up values that were partially messed up, such as 'than 5 hours', which i assume was supposed to be '5 hours'. (Replacing qualitative values with numbers is also good as the ML model understands the magnitude of numbers better than words) For values completely beyond reason such as 'Pune' and 'No', i replaced them with the mean sleep duration value, as the column does not have any crazy outliers of much greater or smaller value than the other values of higher frequency. Thats just my reasoning anyway, i may be wrong and median may be the better choice here.
+
+Fig 4:
 
 ![image](https://github.com/user-attachments/assets/66512368-03ad-4fdc-9d46-f5faf2451b3b)
 
@@ -132,6 +140,8 @@ My data cleaning of the 'Degree' column was not done properly, there are still i
 ## Version 19
 The longest i ever spend cleaning a column, partly because im not knowledgeable on degree acronyms, partly because that was one hella messed up column. Values were all over the place, n i spent a long time not just getting rid of useless values, but also salvaging partially messed up degree names and trying to decipher what they really mean
 
+FIg 5:
+
 ![image](https://github.com/user-attachments/assets/7a627e71-5d81-420a-8fe7-7afe9d7de919)
 
 Public accuracy score did go up in the end, but it was still not as good as the first attempt, making this only the 2nd best score. 
@@ -150,3 +160,41 @@ Made a another new column 'satisfaction_per_financialstress', which is 'Career S
 Edit: Public accuracy score went up to 0.93976, but still short of all time high of 0.93981.
 
 ## Version 23
+In this version, i try to make use of the column i created 'CareerHours_to_Sleep', which represents the ratio of amount of time spent on work or studying to sleep duration. I understand the relationship between the ratio and having depression or not may not be a linear one, so im attempting to split the quantitative values into 'healthy worklife ratio' and 'unhealthy worklife ratio', at least thats the plan.
+
+To do this, i gotta find out what exactly constitutes a healthy 'work to sleep time' ratio. After some research, its a general consensus that for every hour spent working, there should be one hour of sleep, so a 1:1 ratio. I also graphed out the ratios of those with and without depression from the training data:
+
+Here is the ratio distribution for those with depression, the x-axis is labelled ratio1.
+
+Fig 6:
+
+![image](https://github.com/user-attachments/assets/34755029-237c-48e8-8e2c-f220dc890e6e)
+
+In the graph representing the ratio distribution for those without depression, the x-axis is labelled ratio.
+
+Fig 7:
+
+![image](https://github.com/user-attachments/assets/c680cc7f-e41e-40d4-ae1a-be8fc87603df)
+
+(Take note of the different y-axis ticks for both graphs, i did not adjust them to be the same as my only purpose is to see the ratio distribution not the actual quantity.)
+
+As you can see from Fig 7, those with a ratio from 0 to 1 are mostly not depressed. Even in Fig 6, those with ratio between 0 and 1 do not make up a large proportion of the depressed population. However, besides that, there does not seem to be any other visible trends or patterns that can be used to distinguish between those with depression and those without. The distribution of the ratios beyond 1 between the 2 graphs are very similar, and both graphs have a large proportion of people with ratios between 1 and 1.5. With this, i have decided that even though the abs coefficient of the variable is large, the variable must be removed for fear of the model picking up on false trends and patterns.
+
+## Version 24
+Gonna do the same for that other column i made in Version 22, 'satisfaction_per_financialstress'. Upon plotting the distribution of this ratio for both the depressed and not depressed, i got these 2 graphs:
+
+Fig 8 represents the depressed and Fig 9 the not depressed.
+
+Fig 8:
+
+![image](https://github.com/user-attachments/assets/a88f6ca1-5380-446e-bc98-4dbaf0b71d19)
+
+Fig 9:
+
+![image](https://github.com/user-attachments/assets/94d323ec-1955-4834-a651-3b89d36c9964)
+
+We can see that both graphs have a high composition of individuals with low ratio, meaning their satisfaction with their job does not justify their income and financial situation. Can't differentiate the 2 from that aspect. However, it seems that for those with relatively higher ratio(> 1), meaning their satisfied enough with their job such that it offsets the amount they are paid to do it, they make up a greater fraction of the 'not depressed' population compared to the 'depressed' population. What i think i will do is converting these numerical values into qualitative values, such that ratios > 1 will be categorized under 'financiallyjustified' and ratios < 1 'financiallynotjustified'. Weird names i know, its been a long day.
+
+The new columns 'financiallyjustified' and 'financiallynotjustified' both have an absolute coefficient of 0.009196 and the accuracy score on the mock test data was 0.93941, public accuracy score was 0.93966.
+
+# Version 25
