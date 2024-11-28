@@ -206,3 +206,23 @@ The l2 regularisation did not help the model, so i think my new columns financia
 Edit: The performance went down, i guess my new columns really are useful. Sometimes the Kaggle submission page gives different public accuracy scores for the same version, its kinda weird.
 
 ## Version 27
+Trying out RandomForestClassifier model instead of logreg model, got an accuracy of 0.9388, not so good.
+
+## Version 28
+As the number of depressed people in the training dataset only made up about 22% of the training data, i decided to experiment with different weights for the depressed people using a simple for loop. However, the results did not improve surprisingly.
+
+Weight of depressed: 1.2, Accuracy: 0.93894
+Weight of depressed: 1.4, Accuracy: 0.93702
+Weight of depressed: 1.6, Accuracy: 0.93550
+Weight of depressed: 1.8, Accuracy: 0.93450
+Weight of depressed: 2.0, Accuracy: 0.93283
+
+It just kept decreasing, so safe to say adjusting weights is not beneficial here.
+
+## Version 29
+Here i try to use GridSearchCV to find out the optimum parameters as its clearly not working when i do it manually myself. For the gridsearch hyperparams, i set a cv of 5 for 5 folds, meaning 4 training portions to 1 test portion every test, i evaluate the scoring using accuracy because thats what i have been using all this time, and i set n_jobs = -1 because this process is slow af and i want to speed it up. 
+
+Edit: Its taking very long, like rlly long, so ill move on to later versions first and update this when its done. Edit 2: it crashed my laptop and messed up the jupyter notebook so it stopped running, so from Version 30 onwards ill be doing in a new notebook called 'stilldepressed machine learning'.
+
+## Version 30
+refer to other jupyter notebook
