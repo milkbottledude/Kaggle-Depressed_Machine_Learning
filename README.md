@@ -222,7 +222,15 @@ It just kept decreasing, so safe to say adjusting weights is not beneficial here
 ## Version 29
 Here i try to use GridSearchCV to find out the optimum parameters as its clearly not working when i do it manually myself. For the gridsearch hyperparams, i set a cv of 5 for 5 folds, meaning 4 training portions to 1 test portion every test, i evaluate the scoring using accuracy because thats what i have been using all this time, and i set n_jobs = -1 because this process is slow af and i want to speed it up. 
 
-Edit: Its taking very long, like rlly long, so ill move on to later versions first and update this when its done. Edit 2: it crashed my laptop and messed up the jupyter notebook so it stopped running, so from Version 30 onwards ill be doing in a new notebook called 'stilldepressed machine learning'.
+Edit: Its taking very long, like rlly long, so ill move on to later versions first and update this when its done. Edit 2: Here are the results from the gridearch
+Best Hyperparameters: {'C': 0.1, 'class_weight': None, 'max_iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}
 
 ## Version 30
-refer to other jupyter notebook
+Trying out MinMaxScaler instead of StandardScaler which i have been using so far, yielded a public score of 0.93944. Still not surpassing our highest.
+
+## Version 31
+Gonna use ROC curve to determine which threshold value to use for best accuracy. Tbh i dont know the exact ins and outs of the ROC curve but i know just enough to use it for the benefit of the model, and i will try my best to break down my limited knowledge of it to u guys. 
+
+Lets start with threshold value, which is basically the minimum probability for a case to be considered positive. For example, lets say the logreg final probability value for a particular row is 0.6, so 60% chance the person is depressed. The person would be considered depressed if the threshold value was 0.5 but would be classified as not depressed if threshold value was 0.7. 
+
+The ROC curve is basically just a graph of TPR (true postive rate = true positives/all positives) against FPR (false positive rate = false positive/all negatives). The greater the area under the curve for a particular model, the greater the accuracy. However in our case here, we will not be using different models but rather experimenting with different threshold levels using the same model. 
