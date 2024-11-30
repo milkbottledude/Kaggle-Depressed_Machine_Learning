@@ -6,7 +6,7 @@ Feel free to skip to any chapters that interest you, the chapters do not necessa
 ## Contents
 Chapter 1: Data Cleaning (Versions 1-14)
 
-Chapter 2: (Versions 15-
+Chapter 2: (Versions 15-32)
 
 # Chapter 1: Data Cleaning
 
@@ -250,3 +250,7 @@ looks ok but i would like a higher TPR without increasing FPR so that the top le
 
 ## Version 32
 After crying in a corner for 5mins, i decided to take a more manual approach and personally investigate the rows in the mock test dataset that the model was predicting wrong. Unfortunately my unintelligent ass could not pick up any patterns that the model could not, the incorrect predictions were difficult for myself as well to decipher. For example, people that never thought of suicidal thoughts, had no history of mental illness in family members, had healthy sleep duration (6-9 hours), and some even with high CGPA, had depression.
+
+## Conclusion
+
+That wraps up my documentation on my journey in the Kaggle Competition Exploring Mental Health Data: Playground Series - Season 4, Episode 11. I feel like my own mental health took a toll whenever my public accuracy score went down after a submission, but i learned a lot of new things about machine learning models as well as data preparation that i previously did not learn in my machine learning books, and it also helped me to write all that i did and learned in this README as it kind of 'solidified'? the knowledge into memory again. One thing is that the public accuracy score is only calculated based on 20% of the entire test dataset, and they will use the full dataset when the competition is over for judging who wins and who gets the grand prize, 'swag'. The competition ends in a few more hours and only then will we know for sure what the true accuracy of our logreg model is. If the final score doesnt make me sad, i might post an update here on whats my final placing in the leaderboard. Overall, i had fun, and i hope to see you again in another repository, hopefully one much more readable and clean than this. Have a good day, remember to drink water, and always give up your seat in public transport for those who need it :) (otherwise ur not my friend).
