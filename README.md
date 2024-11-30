@@ -233,4 +233,20 @@ Gonna use ROC curve to determine which threshold value to use for best accuracy.
 
 Lets start with threshold value, which is basically the minimum probability for a case to be considered positive. For example, lets say the logreg final probability value for a particular row is 0.6, so 60% chance the person is depressed. The person would be considered depressed if the threshold value was 0.5 but would be classified as not depressed if threshold value was 0.7. 
 
-The ROC curve is basically just a graph of TPR (true postive rate = true positives/all positives) against FPR (false positive rate = false positive/all negatives). The greater the area under the curve for a particular model, the greater the accuracy. However in our case here, we will not be using different models but rather experimenting with different threshold levels using the same model. 
+The ROC curve is basically just a graph of TPR (true postive rate = true positives/all positives) against FPR (false positive rate = false positive/all negatives). The greater the area under the curve for a particular model, the greater the accuracy. However in our case here, we will not be using different models just experimenting with different threshold levels using the same model. 
+
+Threshold: 0.25, TPR: 0.9024003173973418, FPR: 0.07026278193861206, Accuracy: 0.92484
+Threshold: 0.45, TPR: 0.8371354889902797, FPR: 0.03917918524611455, Accuracy: 0.93866
+Threshold: 0.5, TPR: 0.8161079150962111, FPR: 0.03372440365383783, Accuracy: 0.93937
+Threshold: 0.55, TPR: 0.7899226343979369, FPR: 0.029481795748733712, Accuracy: 0.93816
+Threshold: 0.6, TPR: 0.7651259670700258, FPR: 0.02510931209143253, Accuracy: 0.93731
+Threshold: 0.7, TPR: 0.6970839119222376, FPR: 0.01731676695960864, Accuracy: 0.93152
+
+After getting these TPR and FPR values, we can now plot them as y and x values respectively to form a best fit ROC curve, getting this.
+
+![image](https://github.com/user-attachments/assets/d057955e-50e6-4371-8e76-a4e4aecd65eb)
+
+looks ok but i would like a higher TPR without increasing FPR so that the top left point is closer to (1, 0). Also i used correlation_matrix to check for correlated features, totally glossed over the fact that 'Have you ever had suicidal thoughts ?_Yes' and 'Have you ever had suicidal thoughts ?_No' have a perfectly negative correlation to each other, same as the features 'Family History of Mental Illness_No' and 'Family History of Mental Illness_Yes', so i removed the 'no' columns for both pairs. It boggles my mind how after removing correlated columns, which by right is supposed to be highly detrimental to logreg models, the public accuracy score is still only 0.93971. I srsly dont get it.
+
+## Version 32
+After crying in a corner for 5mins, i decided to take a more manual approach and personally investigate the rows in the mock test dataset that the model was predicting wrong.
