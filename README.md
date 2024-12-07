@@ -6,7 +6,7 @@ Feel free to skip to any chapters that interest you, the chapters do not necessa
 ## Contents
 Chapter 1: Data Cleaning (Versions 1-14)
 
-Chapter 2: (Versions 15-32)
+Chapter 2: Machine Learning Model configuration (Versions 15-32)
 
 # Chapter 1: Data Cleaning
 
