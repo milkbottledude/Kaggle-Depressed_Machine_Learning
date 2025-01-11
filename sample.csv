@@ -1,0 +1,102 @@
+id,Name,Gender,Age,City,Working Professional or Student,Profession,Academic Pressure,Work Pressure,CGPA,Study Satisfaction,Job Satisfaction,Sleep Duration,Dietary Habits,Degree,Have you ever had suicidal thoughts ?,Work/Study Hours,Financial Stress,Family History of Mental Illness,Depression
+0,Aaradhya,Female,49.0,Ludhiana,Working Professional,Chef,,5.0,,,2.0,More than 8 hours,Healthy,BHM,No,1.0,2.0,No,0
+1,Vivan,Male,26.0,Varanasi,Working Professional,Teacher,,4.0,,,3.0,Less than 5 hours,Unhealthy,LLB,Yes,7.0,3.0,No,1
+2,Yuvraj,Male,33.0,Visakhapatnam,Student,,5.0,,8.97,2.0,,5-6 hours,Healthy,B.Pharm,Yes,3.0,1.0,No,1
+3,Yuvraj,Male,22.0,Mumbai,Working Professional,Teacher,,5.0,,,1.0,Less than 5 hours,Moderate,BBA,Yes,10.0,1.0,Yes,1
+4,Rhea,Female,30.0,Kanpur,Working Professional,Business Analyst,,1.0,,,1.0,5-6 hours,Unhealthy,BBA,Yes,9.0,4.0,Yes,0
+5,Vani,Female,59.0,Ahmedabad,Working Professional,Finanancial Analyst,,2.0,,,5.0,5-6 hours,Healthy,MCA,No,7.0,5.0,No,0
+6,Ritvik,Male,47.0,Thane,Working Professional,Chemist,,5.0,,,2.0,7-8 hours,Moderate,MD,No,6.0,2.0,No,0
+7,Rajveer,Male,38.0,Nashik,Working Professional,Teacher,,3.0,,,4.0,7-8 hours,Unhealthy,B.Pharm,No,10.0,3.0,Yes,0
+8,Aishwarya,Female,24.0,Bangalore,Student,,2.0,,5.9,5.0,,5-6 hours,Moderate,BSc,No,3.0,2.0,Yes,0
+9,Simran,Female,42.0,Patna,Working Professional,Electrician,,4.0,,,1.0,5-6 hours,Healthy,ME,Yes,7.0,2.0,Yes,0
+10,Utkarsh,Male,55.0,Rajkot,Working Professional,Software Engineer,,3.0,,,2.0,7-8 hours,Moderate,BSc,No,6.0,4.0,Yes,0
+11,Aahana,Female,51.0,Patna,Working Professional,Teacher,,1.0,,,2.0,7-8 hours,Moderate,B.Arch,No,9.0,5.0,No,0
+12,Tejas,Male,39.0,Jaipur,Working Professional,Data Scientist,,2.0,,,5.0,More than 8 hours,Moderate,BCA,Yes,1.0,3.0,No,0
+13,Aadhya,Female,29.0,Pune,Working Professional,Chef,,4.0,,,4.0,7-8 hours,Unhealthy,BHM,No,6.0,5.0,Yes,0
+14,Kiran,Male,50.0,Thane,Working Professional,Plumber,,1.0,,,1.0,More than 8 hours,Moderate,BE,Yes,8.0,5.0,Yes,0
+15,Aditi,Female,23.0,Patna,Working Professional,Marketing Manager,,2.0,,,2.0,5-6 hours,Healthy,MA,Yes,6.0,4.0,Yes,1
+16,Suhani,Female,49.0,Lucknow,Working Professional,Teacher,,5.0,,,3.0,More than 8 hours,Healthy,B.Ed,No,2.0,1.0,No,0
+17,Jiya,Female,56.0,Meerut,Working Professional,Accountant,,5.0,,,3.0,7-8 hours,Moderate,B.Com,No,0.0,5.0,Yes,0
+18,Bhavesh,Male,50.0,Agra,Working Professional,Entrepreneur,,5.0,,,2.0,7-8 hours,Moderate,BBA,No,3.0,2.0,Yes,0
+19,Armaan,Male,45.0,Rajkot,Working Professional,Teacher,,2.0,,,4.0,5-6 hours,Moderate,MBA,Yes,2.0,3.0,No,0
+20,Ishaani,Female,37.0,Surat,Working Professional,Teacher,,3.0,,,1.0,7-8 hours,Healthy,B.Ed,No,5.0,2.0,Yes,0
+21,Prachi,Female,45.0,Faridabad,Working Professional,HR Manager,,3.0,,,1.0,7-8 hours,Unhealthy,MA,Yes,6.0,4.0,Yes,0
+22,Pratyush,Male,37.0,Meerut,Working Professional,Teacher,,5.0,,,5.0,5-6 hours,Healthy,B.Arch,No,9.0,2.0,Yes,0
+23,Aishwarya,Female,46.0,Hyderabad,Working Professional,UX/UI Designer,,2.0,,,3.0,5-6 hours,Healthy,BCA,No,7.0,5.0,No,0
+24,Abhinav,Male,39.0,Pune,Working Professional,Content Writer,,5.0,,,2.0,More than 8 hours,Healthy,M.Com,Yes,7.0,2.0,Yes,0
+25,Siddhesh,Male,38.0,Thane,Working Professional,Chef,,2.0,,,1.0,More than 8 hours,Healthy,MHM,Yes,2.0,2.0,No,0
+26,Aditya,Male,31.0,Srinagar,Student,,3.0,,7.03,5.0,,Less than 5 hours,Healthy,BA,No,9.0,1.0,Yes,0
+27,Aarav,Male,50.0,Ghaziabad,Working Professional,HR Manager,,5.0,,,3.0,Less than 5 hours,Healthy,MA,Yes,12.0,5.0,Yes,1
+28,Asha,Female,47.0,Kolkata,Working Professional,Entrepreneur,,3.0,,,5.0,7-8 hours,Moderate,BSc,No,5.0,1.0,No,0
+29,Kashish,Female,19.0,Agra,Working Professional,,,1.0,,,5.0,More than 8 hours,Healthy,Class 12,No,5.0,2.0,No,0
+30,Prisha,Female,28.0,Varanasi,Student,,3.0,,5.59,2.0,,7-8 hours,Moderate,BCA,Yes,4.0,5.0,Yes,1
+31,Aaradhya,Female,37.0,Pune,Working Professional,Chef,,2.0,,,1.0,7-8 hours,Unhealthy,BHM,No,5.0,3.0,Yes,0
+32,Chhavi,Female,25.0,Jaipur,Student,,4.0,,8.13,3.0,,5-6 hours,Moderate,M.Tech,Yes,1.0,1.0,No,0
+33,Tanmay,Male,29.0,Pune,Student,,2.0,,5.7,3.0,,Less than 5 hours,Healthy,PhD,No,4.0,1.0,No,0
+34,Vihaan,Male,41.0,Chennai,Working Professional,Teacher,,1.0,,,4.0,7-8 hours,Unhealthy,LLB,Yes,6.0,5.0,No,0
+35,Shiv,Male,45.0,Rajkot,Working Professional,Chemist,,1.0,,,4.0,7-8 hours,Moderate,B.Pharm,Yes,9.0,1.0,Yes,0
+36,Anvi,Female,50.0,Kalyan,Working Professional,,,4.0,,,4.0,7-8 hours,Unhealthy,Class 12,No,0.0,2.0,No,0
+37,Darsh,Male,51.0,Nagpur,Working Professional,Educational Consultant,,1.0,,,5.0,7-8 hours,Unhealthy,B.Ed,Yes,0.0,4.0,No,0
+38,Samar,Male,45.0,Mumbai,Working Professional,Civil Engineer,,3.0,,,2.0,Less than 5 hours,Healthy,MCA,No,9.0,5.0,No,0
+39,Raunak,Male,59.0,Jaipur,Working Professional,Manager,,4.0,,,1.0,Less than 5 hours,Unhealthy,BHM,Yes,2.0,4.0,No,0
+40,Armaan,Male,51.0,Nashik,Working Professional,Electrician,,2.0,,,4.0,7-8 hours,Healthy,ME,No,1.0,2.0,Yes,0
+41,Mahi,Female,47.0,Ludhiana,Working Professional,Pharmacist,,4.0,,,1.0,Less than 5 hours,Healthy,B.Pharm,Yes,9.0,2.0,Yes,0
+42,Shaurya,Male,60.0,Ludhiana,Working Professional,Manager,,4.0,,,1.0,5-6 hours,Moderate,MHM,Yes,3.0,2.0,No,0
+43,Vidya,Female,18.0,Vadodara,Working Professional,,,5.0,,,4.0,Less than 5 hours,Moderate,Class 12,Yes,10.0,5.0,No,1
+44,Jai,Male,55.0,Jaipur,Working Professional,Civil Engineer,,1.0,,,1.0,7-8 hours,Unhealthy,BBA,Yes,0.0,2.0,No,0
+45,Ayush,Male,36.0,Ludhiana,Working Professional,Marketing Manager,,1.0,,,2.0,7-8 hours,Healthy,BA,Yes,0.0,2.0,Yes,0
+46,Ansh,Male,49.0,Meerut,Working Professional,Teacher,,2.0,,,1.0,7-8 hours,Moderate,M.Ed,Yes,0.0,1.0,Yes,0
+47,Vani,Female,50.0,Nashik,Working Professional,Pharmacist,,1.0,,,3.0,7-8 hours,Unhealthy,MA,Yes,10.0,2.0,Yes,0
+48,Anand,Male,38.0,Ghaziabad,Working Professional,,,2.0,,,5.0,5-6 hours,Moderate,Class 12,No,1.0,1.0,Yes,0
+49,Yashvi,Female,39.0,Vasai-Virar,Working Professional,Financial Analyst,,2.0,,,2.0,7-8 hours,Moderate,B.Com,No,0.0,1.0,Yes,0
+50,Raunak,Male,21.0,Pune,Working Professional,,,4.0,,,5.0,5-6 hours,Healthy,Class 12,Yes,8.0,5.0,Yes,0
+51,Aarav,Male,58.0,Kalyan,Working Professional,Architect,,2.0,,,1.0,More than 8 hours,Unhealthy,B.Arch,Yes,4.0,1.0,Yes,0
+52,Shrey,Male,30.0,Thane,Student,,3.0,,9.54,4.0,,7-8 hours,Healthy,BSc,No,1.0,2.0,No,0
+53,Ritika,Female,44.0,Ludhiana,Working Professional,Teacher,,5.0,,,2.0,7-8 hours,Unhealthy,B.Pharm,No,9.0,1.0,Yes,0
+54,Mihir,Male,31.0,Patna,Working Professional,Mechanical Engineer,,2.0,,,5.0,Less than 5 hours,Healthy,PhD,No,0.0,3.0,Yes,0
+55,Ayush,Male,56.0,Kanpur,Working Professional,Plumber,,2.0,,,3.0,Less than 5 hours,Moderate,MCA,No,10.0,3.0,No,0
+56,Isha,Female,30.0,Chennai,Student,,2.0,,8.04,4.0,,Less than 5 hours,Unhealthy,Class 12,No,0.0,1.0,Yes,0
+57,Arjun,Male,47.0,Lucknow,Working Professional,Teacher,,2.0,,,3.0,More than 8 hours,Healthy,MCA,Yes,12.0,4.0,No,0
+58,Vani,Female,23.0,Agra,Working Professional,HR Manager,,5.0,,,2.0,5-6 hours,Healthy,MSc,Yes,3.0,4.0,No,1
+59,Rohan,Male,28.0,Nagpur,Student,,3.0,,9.79,1.0,,7-8 hours,Moderate,B.Ed,Yes,12.0,3.0,No,1
+60,Vivan,Male,25.0,Hyderabad,Working Professional,Teacher,,5.0,,,2.0,7-8 hours,Unhealthy,B.Arch,No,4.0,5.0,Yes,1
+61,Pratham,Male,43.0,Patna,Working Professional,Architect,,4.0,,,1.0,Less than 5 hours,Healthy,BSc,No,0.0,3.0,No,0
+62,Nirvaan,Male,31.0,Nashik,Student,,2.0,,8.38,3.0,,Less than 5 hours,Moderate,LLB,Yes,2.0,5.0,No,1
+63,Ishaan,Male,40.0,Ludhiana,Working Professional,Marketing Manager,,3.0,,,3.0,Less than 5 hours,Unhealthy,BA,No,1.0,5.0,Yes,0
+64,Aarya,Female,28.0,Chennai,Working Professional,Electrician,,3.0,,,2.0,5-6 hours,Moderate,BCA,No,9.0,1.0,Yes,0
+65,Riya,Female,35.0,Rajkot,Working Professional,Mechanical Engineer,,4.0,,,1.0,5-6 hours,Healthy,BSc,Yes,4.0,4.0,No,0
+66,Aariv,Male,54.0,Meerut,Working Professional,Chef,,1.0,,,2.0,5-6 hours,Moderate,BHM,No,1.0,3.0,No,0
+67,Raghavendra,Male,50.0,Vasai-Virar,Working Professional,Customer Support,,4.0,,,3.0,7-8 hours,Healthy,BA,No,7.0,4.0,No,0
+68,Armaan,Male,46.0,Ludhiana,Working Professional,Consultant,,1.0,,,3.0,Less than 5 hours,Healthy,PhD,Yes,3.0,3.0,No,0
+69,Mahika,Female,51.0,Agra,Working Professional,Teacher,,2.0,,,4.0,5-6 hours,Healthy,B.Ed,No,0.0,2.0,No,0
+70,Abhishek,Male,18.0,Vasai-Virar,Working Professional,,,5.0,,,2.0,Less than 5 hours,Moderate,Class 12,Yes,6.0,4.0,No,1
+71,Jiya,Female,38.0,Vadodara,Working Professional,Architect,,4.0,,,2.0,7-8 hours,Healthy,MCA,Yes,11.0,5.0,Yes,0
+72,Armaan,Male,54.0,Vasai-Virar,Working Professional,Teacher,,2.0,,,3.0,5-6 hours,Moderate,B.Arch,No,6.0,1.0,No,0
+73,Harshil,Male,44.0,Kolkata,Working Professional,Consultant,,3.0,,,5.0,5-6 hours,Healthy,BBA,No,1.0,3.0,No,0
+74,Rohan,Male,41.0,Thane,Working Professional,Content Writer,,1.0,,,2.0,5-6 hours,Unhealthy,ME,Yes,6.0,2.0,Yes,0
+75,Janvi,Female,59.0,Agra,Working Professional,Marketing Manager,,5.0,,,3.0,7-8 hours,Healthy,BA,Yes,5.0,4.0,Yes,0
+76,Aariv,Male,54.0,Delhi,Working Professional,Content Writer,,4.0,,,2.0,7-8 hours,Unhealthy,B.Ed,No,12.0,5.0,Yes,0
+77,Kartikeya,Male,45.0,Rajkot,Working Professional,Architect,,1.0,,,5.0,7-8 hours,Unhealthy,B.Arch,Yes,6.0,3.0,Yes,0
+78,Shivam,Male,46.0,Surat,Working Professional,Educational Consultant,,2.0,,,2.0,7-8 hours,Moderate,B.Ed,No,10.0,1.0,Yes,0
+79,Advait,Male,45.0,Bangalore,Working Professional,Teacher,,2.0,,,4.0,7-8 hours,Unhealthy,B.Pharm,No,11.0,4.0,No,0
+80,Samar,Male,21.0,Thane,Working Professional,,,4.0,,,4.0,5-6 hours,Unhealthy,Class 12,No,1.0,2.0,No,0
+81,Reyansh,Male,19.0,Nagpur,Working Professional,,,5.0,,,4.0,Less than 5 hours,Moderate,Class 12,Yes,11.0,2.0,No,1
+82,Saanvi,Female,49.0,Hyderabad,Working Professional,,,1.0,,,5.0,5-6 hours,Moderate,Class 12,No,0.0,3.0,No,0
+83,Ivaan,Male,24.0,Nagpur,Student,,3.0,,6.1,3.0,,5-6 hours,Moderate,Class 12,Yes,11.0,1.0,Yes,1
+84,Pallavi,Female,47.0,Nagpur,Working Professional,Teacher,,5.0,,,5.0,7-8 hours,Unhealthy,BSc,No,0.0,5.0,Yes,0
+85,Rohan,Male,51.0,Hyderabad,Working Professional,Judge,,3.0,,,5.0,5-6 hours,Healthy,LLB,No,11.0,1.0,Yes,0
+86,Aaradhya,Female,30.0,Vadodara,Working Professional,Teacher,,2.0,,,4.0,Less than 5 hours,Unhealthy,B.Arch,No,10.0,2.0,No,0
+87,Samar,Male,54.0,Jaipur,Working Professional,Researcher,,2.0,,,4.0,5-6 hours,Unhealthy,M.Tech,No,2.0,2.0,No,0
+88,Sneha,Female,60.0,Rajkot,Working Professional,UX/UI Designer,,5.0,,,3.0,7-8 hours,Moderate,MSc,No,2.0,1.0,Yes,0
+89,Ayaan,Male,45.0,Bangalore,Working Professional,Teacher,,1.0,,,5.0,7-8 hours,Moderate,B.Arch,No,2.0,4.0,Yes,0
+90,Ayush,Male,24.0,Chennai,Working Professional,Teacher,,4.0,,,3.0,5-6 hours,Healthy,B.Ed,Yes,8.0,4.0,Yes,0
+91,Aakash,Male,33.0,Vadodara,Student,,3.0,,7.03,4.0,,Less than 5 hours,Healthy,BE,Yes,10.0,2.0,Yes,0
+92,Raghav,Male,54.0,Nagpur,Working Professional,Content Writer,,2.0,,,1.0,More than 8 hours,Unhealthy,B.Tech,No,3.0,1.0,No,0
+93,Shiv,Male,18.0,Thane,Working Professional,,,4.0,,,2.0,7-8 hours,Unhealthy,Class 12,No,2.0,1.0,No,0
+94,Satyam,Male,27.0,Kalyan,Student,,5.0,,7.04,1.0,,Less than 5 hours,Moderate,M.Tech,No,10.0,1.0,Yes,1
+95,Shiv,Male,36.0,Rajkot,Working Professional,Teacher,,2.0,,,5.0,More than 8 hours,Healthy,B.Ed,Yes,10.0,4.0,No,0
+96,Aarush,Male,31.0,Ludhiana,Working Professional,Teacher,,4.0,,,3.0,5-6 hours,Unhealthy,B.Ed,Yes,4.0,2.0,No,0
+97,Vibha,Female,52.0,Chennai,Working Professional,Data Scientist,,1.0,,,3.0,7-8 hours,Moderate,M.Tech,No,1.0,2.0,Yes,0
+98,Rupal,Female,56.0,Lucknow,Working Professional,Educational Consultant,,2.0,,,2.0,Less than 5 hours,Healthy,B.Ed,No,9.0,2.0,No,0
+99,Vivan,Male,36.0,Thane,Working Professional,Teacher,,1.0,,,2.0,Less than 5 hours,Healthy,B.Ed,Yes,10.0,3.0,Yes,0
+100,Sanya,Female,19.0,Rajkot,Student,,2.0,,8.52,4.0,,Less than 5 hours,Unhealthy,Class 12,No,6.0,2.0,Yes,0
