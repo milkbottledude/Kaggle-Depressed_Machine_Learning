@@ -1,18 +1,29 @@
 
-![image](https://github.com/user-attachments/assets/ece40ebc-ae0a-4a30-9dad-a7475f18af1f)
+![image](https://github.com/user-attachments/assets/6257516e-193e-4caa-9cf9-0bbc12dd2035)
 
 - 🗪 Feel free to telegram me [@milkbottledude](https://t.me/milkbottledude) if you have any questions, or just want to chat :)
 
 ## Overview 🔍
+In this project, i try and create a machine learning model that predicts whether one has depression based on their characteristics and other variables, including but not limited to:
+- Profession 💼
+- Sleep duration 💤
+- Stress 😖
+- Dietary Habits 🍽️
 
-This is a super duper simple and detailed explanation of my very simple machine learning model project, which predicts whether one has depression based on a variety of variables and characteristics of a person. as well as a documentation of my whole learning process here. 
+For the rest of the variables, you can refer to [sample.csv](./sample.csv), which is the first 100 rows of the train.csv dataset we will be using for our machine learning models to predict depression. The column names represent the variables.
 
-It may seem lengthy, but i assure you its rather easy to understand.
+In this project the machine learning model we will be using is a Logistic Regression model. I could use a simpler Decision Tree Classifier or Random Forest Classifier model, but i want to try out theLogReg model which is not as common. 
 
-Feel free to skip ⏭️ to any chapters that interest you, the chapters do not necessarily have to be read in order.
+Also, unlike the aforementioned models which output a binary 'True ✅' or 'False ❌' value, LogReg models give a probability value which gives us more control over the result of the model 🔧.
+
+![image](https://github.com/user-attachments/assets/3be9f5a3-b5ee-46d2-aa5b-cacd75b4235e)
+
+The output value from a LogReg model ranges between 0 and 1, with 0 = '100% False' and 1 = '100% True'. You can adjust the threshold value which determines at which point is a value considered 'True' or 'False', and i want to experiment with that, as well as with other LogReg hyperparameters, in this project 🧪.
+
+Below is a super duper simple documentation of my very simple machine learning model project, as well as my whole learning process ✏️. Feel free to skip ⏭️ to any chapters that interest you, the chapters do not necessarily have to be read in order.
 
 ## Table of Content
-Chapter 1: Data Cleaning (Versions 1-14)
+Chapter 1: Data Cleaning🧼 (Versions 1-14)
 - Version 1
 - Version 2
 - Version 3
@@ -28,7 +39,7 @@ Chapter 1: Data Cleaning (Versions 1-14)
 - Version 13
 - Version 14
 
-Chapter 2: Machine Learning Model configuration (Versions 15-32)
+Chapter 2: Machine Learning Model configuration⚙️ (Versions 15-32)
 - Version 15
 - Version 16
 - Version 17
@@ -52,7 +63,7 @@ Chapter 3: [Conclusion](#conclusion)
 
 ## 📚 Documentation
 
-## Chapter 1: Data Cleaning
+## Chapter 1: Data Cleaning🧼
 ### Version 1: 
 Starting off, I did the usual looking for NaN values and removing unnecessary columns that would only confuse the machine learning model such as id and Name. 
 
@@ -148,7 +159,7 @@ Heres the list of values that were in the 'Profession' column.
 
 {'Marketing Manager', 'Visakhapatnam', 'B.Ed', 'MCA', 'Doctor', 'Researcher', 'Digital Marketer', 'Working Professional', 'Data Scientist', 'Entrepreneur', 'FamilyVirar', 'Financial Analyst', 'Research Analyst', '24th', 'M.Ed', 'MD', 'Manager', 'Profession', 'Civil Engineer', 'M.Tech', 'Mechanical Engineer', 'MBBS', 'BBA', 'Dev', 'Surgeon', 'B.Com', 'Chef', 'Investment Banker', '3M', 'PhD', 'Teacher', 'Travel Consultant', 'Medical Doctor', 'Educational Consultant', 'Finanancial Analyst', 'City Consultant', 'Sales Executive', 'Graphic Designer', 'UX/UI Designer', 'Pranav', 'Manvi', 'BE', 'Pharmacist', 'Software Engineer', 'Plumber', 'City Manager', 'Simran', 'Business Analyst', 'No', 'Unveil', 'Patna', 'Customer Support', 'B.Pharm', 'Name', 'Electrician', 'LLM', 'Yogesh', 'MBA', 'Chemist', 'Pilot', 'Moderate', 'Architect', 'Judge', 'BCA', 'Samar', 'Unhealthy', 'Lawyer', 'ME', 'Analyst', 'Yuvraj', 'Consultant', 'Family Consultant', 'Accountant', 'Content Writer', 'Surat', 'Student', 'Unemployed', 'HR Manager', 'Nagpur', 'Academic'}
 
-# Chapter 2: Machine Learning Model configuration
+# Chapter 2: Machine Learning Model configuration⚙️
 
 ### Version 15
 To start, ive kept things simple with a Logistic Regression classification model, but i had to edit one of the hyperparameters, max_iter, and increase it from 100 to 150 as the model could not converge to a small enough error value within 100 updates of the model's parameters. I split the training data into 4 parts mock training data and 1 part mock test data. I then trained the model on the mock training data and tested it on the mock test data, getting an accuracy score of 93.16%, which im quite happy with for a first try. Maybe its because of the all the data cleaning which yielded this result, or maybe the dataset variables are just that good.
@@ -302,4 +313,4 @@ One thing is that the public accuracy score is only calculated based on 20% of t
 
 Overall, i had fun, and i hope to see you again in another repository, hopefully one much more readable and clean than this. Have a good day, remember to drink water, and always give up your seat in public transport for those who need it :) (otherwise ur not my friend).
 
-Final Placing: 1716th place out of 2687 participants, 36th percentile. 
+Final Placing 🏅: 1716th place out of 2687 participants, 36th percentile. 
