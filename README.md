@@ -13,40 +13,40 @@ Feel free to skip ⏭️ to any chapters that interest you, the chapters do not 
 
 ## Table of Content
 Chapter 1: Data Cleaning (Versions 1-14)
-- [Version 1](#version-1)
-- [Version 2](#version-2)
-- [Version 3](#version-3)
-- [Version 4](#version-4)
-- [Version 5](#version-5)
-- [Version 6](#version-6)
-- [Version 7](#version-7)
-- [Version 8](#version-8)
-- [Version 9](#version-9)
-- [Version 10](#version-10)
-- [Version 11](#version-11)
-- [Version 12](#version-12)
-- [Version 13](#version-13)
-- [Version 14](#version-14)
+- Version 1
+- Version 2
+- Version 3
+- Version 4
+- Version 5
+- Version 6
+- Version 7
+- Version 8
+- Version 9
+- Version 10
+- Version 11
+- Version 12
+- Version 13
+- Version 14
 
 Chapter 2: Machine Learning Model configuration (Versions 15-32)
-- [Version 15]
-- [Version 16]
-- [Version 17]
-- [Version 18]
-- [Version 19]
-- [Version 20]
-- [Version 21]
-- [Version 22]
-- [Version 23]
-- [Version 24]
-- [Version 25]
-- [Version 26]
-- [Version 27]
-- [Version 28]
-- [Version 29]
-- [Version 30]
-- [Version 31]
-- [Version 32]
+- Version 15
+- Version 16
+- Version 17
+- Version 18
+- Version 19
+- Version 20
+- Version 21
+- Version 22
+- Version 23
+- Version 24
+- Version 25
+- Version 26
+- Version 27
+- Version 28
+- Version 29
+- Version 30
+- Version 31
+- Version 32
   
 Chapter 3: [Conclusion](#conclusion)
 
