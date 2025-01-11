@@ -4,6 +4,8 @@
 - 🗪 Feel free to telegram me [@milkbottledude](https://t.me/milkbottledude) if you have any questions, or just want to chat :)
 
 ## Overview 🔍
+To view the official Kaggle Mental Health Competition website, click [here](https://www.kaggle.com/competitions/playground-series-s4e11).
+
 In this project, i try and create a machine learning model that predicts whether one has depression based on their characteristics and other variables, including but not limited to:
 - Profession 💼
 - Sleep duration 💤
