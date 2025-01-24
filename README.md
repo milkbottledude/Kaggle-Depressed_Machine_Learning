@@ -315,4 +315,7 @@ One thing is that the public accuracy score is only calculated based on 20% of t
 
 Overall, i had fun, and i hope to see you again in another repository, hopefully one much more readable and clean than this. Have a good day, remember to drink water, and always give up your seat in public transport for those who need it :) (otherwise ur not my friend).
 
-Final Placing 🏅: 1716th place out of 2687 participants, 36th percentile. 
+Final Placing 🏅: 1722th place out of 2687 participants, 36th percentile. 
+
+![image](https://github.com/user-attachments/assets/1ec23a78-868f-4c52-9a99-a8ea58bcf7b5)
+
